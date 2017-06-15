@@ -21,6 +21,7 @@
 		591B2BD4C62D400CB4E39B30 /* Pods_MimoiOSCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA866BE4B2BF25DEA765CAF4 /* Pods_MimoiOSCodingChallengeTests.framework */; };
 		99E83C6B1EF2ABFA00BDA0F4 /* LoginViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */; };
 		99E83C6E1EF2B42700BDA0F4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E83C6D1EF2B42700BDA0F4 /* Storyboard.storyboard */; };
+		99E83CB41EF2E46400BDA0F4 /* HybridAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E83CB31EF2E46400BDA0F4 /* HybridAuth.swift */; };
 		B5B57A556C0D6264F7B2EB66 /* Pods_MimoiOSCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */; };
 		BD6E69CAC730DB8A44EDB347 /* Pods_MimoiOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		89A14F25BE0F8EB51FFE565C /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewViewController.swift; sourceTree = "<group>"; };
 		99E83C6D1EF2B42700BDA0F4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		99E83CB31EF2E46400BDA0F4 /* HybridAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridAuth.swift; sourceTree = "<group>"; };
 		9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 		2BF3DEF41E54B79A004DD445 /* MimoiOSCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				99E83CB31EF2E46400BDA0F4 /* HybridAuth.swift */,
 				2BF3DEF81E54B79A004DD445 /* AppDelegate.h */,
 				2BF3DEF91E54B79A004DD445 /* AppDelegate.m */,
 				2BF3DEFB1E54B79A004DD445 /* ViewController.h */,
@@ -370,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3231AB3C8035A775D5323A2E /* [CP] Embed Pods Frameworks */ = {
@@ -415,7 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		61BE2E8A2BBF512CB3CA36C1 /* [CP] Embed Pods Frameworks */ = {
@@ -475,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,6 +493,7 @@
 				2BF3DEFA1E54B79A004DD445 /* AppDelegate.m in Sources */,
 				99E83C6B1EF2ABFA00BDA0F4 /* LoginViewViewController.swift in Sources */,
 				2BCC6AB61E55A55A00585FA1 /* SettingsTableViewCell.swift in Sources */,
+				99E83CB41EF2E46400BDA0F4 /* HybridAuth.swift in Sources */,
 				2BF3DEF71E54B79A004DD445 /* main.m in Sources */,
 				2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */,
 				2BF3DF2C1E54B7DF004DD445 /* SettingsViewController.m in Sources */,
@@ -635,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 352XU3N33J;
 				INFOPLIST_FILE = MimoiOSCodingChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -653,6 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 352XU3N33J;
 				INFOPLIST_FILE = MimoiOSCodingChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

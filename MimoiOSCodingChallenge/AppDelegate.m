@@ -5,6 +5,8 @@
 
 #import "AppDelegate.h"
 #import "SettingsViewController.h"
+#import "MimoiOSCodingChallenge-Swift.h"
+@import Auth0;
 
 @interface AppDelegate ()
 
@@ -49,5 +51,8 @@
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [HybridAuth resume:url options:options];
+}
 
 @end

@@ -7,115 +7,281 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11886DC424726C9B3EE6AD58BA4E7491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		025EC706E60EE52D64DAB5FE62B94B8D /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650CCEC6973E9AA5D9F0AAE0E790F261 /* CredentialsManager.swift */; };
+		02EAAE4C83FF792DBA53C9E02B13BB68 /* UserPatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C725DBFE70AE23754611B0BD1961614 /* UserPatchAttributes.swift */; };
+		05ABA3B13430FE65832BC580E56109F7 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 389241E292067886A082ED0D758B61D4 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A491102422BEFF4E8A060C1A4B4BE2 /* SafariWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06A55496E1A468C1F09B47A4B34E75 /* SafariWebAuth.swift */; };
+		08F688E1C46D9766551EBCA9A608D92D /* NSURLComponents+OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F6D15FBFD0F219E5AD5387BF012C1C /* NSURLComponents+OAuth2.swift */; };
+		13BF98BB9BA5DB0DBFC8CDFC5AF308E0 /* Auth0Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DAEFD91C819BD789445086D43634F /* Auth0Error.swift */; };
+		14C4215DFF618DF0FBABEE04D2C343D6 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 22456A3995969A5407FD0A99C7B96622 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D1F5B37B6ED1438B55CB4483F35BF8D /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BB501497C20211EC9ECB620656477F /* SimpleKeychain.framework */; };
+		1FC70628678E41A71CAD21ED78E8419C /* Auth0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D983AF38DA8201CC35E7B2370B08021 /* Auth0-dummy.m */; };
+		226E7E52AE401F86DF468F57AEF14551 /* _ObjectiveAuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80206597DFEE9B59026F500E95A6BA9 /* _ObjectiveAuthenticationAPI.swift */; };
 		2464C9C506770C5D320351745A9CA375 /* Pods-MimoiOSCodingChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E41F94F1A1D54996A06E2896AE78E666 /* Pods-MimoiOSCodingChallengeUITests-dummy.m */; };
-		24D456F0205BA38C734AA7DB181FD1FD /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27357E6525617E8679A4BCA9DC582050 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EE6F25E690CE68F90A023CEAEEB0255 /* Pods-MimoiOSCodingChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEAE4C1EC4830F46B54194DE6EAE676 /* Pods-MimoiOSCodingChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B965C3E51DB0A14405AF4AE50780172 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */; };
-		6E2E5762A0883326595C092F4A177836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		267EAAE0C78451F234D6F04A3DFC8304 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6BDD14B4DF6A720B26F317B1D9452 /* Credentials.swift */; };
+		26AB8A5AD28B1D29B61BCC5EC93D5DA8 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4A552EF0AD4D77F59B190117AD7532 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29734CBC63E8911896A7CED5762814A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
+		2B5870515393C4FD8C6CD91F50393F2F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C0D6E5750733C54AFAAC67EDD232E3 /* Users.swift */; };
+		320C5F01C5A710A65FC10D4EE6383F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
+		33F0B31B9AD7B31D4E9AD8F270B79FB4 /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFA4035AC52E0B8C839B92C01808AB5 /* OAuth2Grant.swift */; };
+		39F30AB0255301A1F1D9D31FABD5E282 /* Auth0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C8D5D1CF156B8264C6D600BB5A58EC /* Auth0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AD8B61AB666313CF18F503D70788839 /* WebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C91B2A30A329E0BE95F0A618A3800C /* WebAuth.swift */; };
+		3C32E4E95F668C09C0522027DBEB0458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
+		3CC23BC718E5063EBFCC0316F1F47BC1 /* _ObjectiveWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8CE990C51850EE5B6AE5710D069D5 /* _ObjectiveWebAuth.swift */; };
+		4293B1A90E943FAE86FC360D0EC2DBF2 /* SafariSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424815105B547FCAA858B8CBD245CA17 /* SafariSession.swift */; };
+		42E6F9D27D0655D11C6C1CFD55B24A3E /* AuthTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3603656B8E510D26E8844DEB4A95F5D0 /* AuthTransaction.swift */; };
+		4488F1957D30552D03B99309C41C8EBE /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DA334EBFB80BBF22C807869566E14DA2 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44E910073469130A1F5D42D49BFB864F /* Auth0.h in Headers */ = {isa = PBXBuildFile; fileRef = 23455100B56021FADC5750CE5FF9544F /* Auth0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B798FF92CAF0ECF129FD965F2F72C3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322070D7AE1867440352CCD412B88A42 /* Profile.swift */; };
+		473C701E1D45F8EA386BC9058BDEDB75 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C30E247D81E4ED0C46794D0E7A26 /* Requestable.swift */; };
+		54634A17BC35295295E2F719F4F4DF02 /* SilentSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12C608683B1415E7E45E069F3AFA795 /* SilentSafariViewController.swift */; };
+		57A4591FDFFF9342CE4E36B4F6EC6A9E /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D36E573EDD2EAC99B9AB223AA20C79 /* PureLayout-dummy.m */; };
+		5EC3DE9B8DAABF54B430BB146B283E0A /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95C3DAFCB40DDDFF8A31BFC0F204C6 /* Identity.swift */; };
+		62643DAAAB215C414C68ACDB36B00DCA /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B828E59D909A66249A545E5436939B /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62BBB96373649FBFCEA6B47F910B3D54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934001D96C413F25AA536BC3C89F1B23 /* UIKit.framework */; };
+		69B277369BECA2116F4919A39F653965 /* JSONObjectPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197BEB7F86DB6A01C1067EF80DE9735 /* JSONObjectPayload.swift */; };
+		6A7246A69F7CEBC9B6D169A61367D3C7 /* A0SimpleKeychain+KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F2AA6BAB69948EE4706AFD122617FA /* A0SimpleKeychain+KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ADC6CFCF256C0432900BAB6780EF22F /* _ObjectiveManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A00DD06514EC6AFECFB9543DE686 /* _ObjectiveManagementAPI.swift */; };
+		6CC2DB65A8F19287451AB749780DA7E9 /* NSError+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDECCE5FBCA389343E556D30A8DBA96 /* NSError+Helper.swift */; };
+		72D80D7C3F991475A3353785EE300DE1 /* Auth0Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40671120A7078CB56D7F53DD6EE6AB79 /* Auth0Authentication.swift */; };
+		7A5271E7CFEBDB3527F8BA7EA6CBAFA3 /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 48940E6F5D71BFFD6587726148B7821B /* A0SimpleKeychain+KeyPair.m */; };
+		7D593EC65CF82ABF5296E444C9DD495D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
 		7DD1D84BC8939F2CD2C50BBA937E09F4 /* Pods-MimoiOSCodingChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6182916D32BAC2D867B18267B38869 /* Pods-MimoiOSCodingChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E6CE3F55DA98BF78C3C7AD08DF73797 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */; };
-		7F6B57DA08F4D85758657F3EC8A7902F /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84F6948BA274EFE29208CDC769BFBC46 /* Pods-MimoiOSCodingChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C03C0926D5A0DE8B14C06D978A85C /* Pods-MimoiOSCodingChallenge-dummy.m */; };
+		7F7A6251ED7F1AC7E7A3FBF1F6EC0834 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614EBC4EF5430AE910143A88AB988E2A /* Loggable.swift */; };
+		83CE30F1313239B06904A06A74FF3935 /* SimpleKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A9EA0A8DB495CFD750474EB8D20490 /* SimpleKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862833F338F9ED5BCC19211D72AE9569 /* Pods-MimoiOSCodingChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57DEDA34D3C76A200978A9B830EB482 /* Pods-MimoiOSCodingChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C3D46C3AC7059F9BE5DD6B434D51AB2 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8457DB7FA4243FF02128117FBD5A41C /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF0689F447313F95876996B740D315EE /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C90E3A03A806C1FA318E4C8B3F6D04F6 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */; };
-		CC60022D6863624E0A0CB3FF0213AFD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E61010ACEA1F28BF5DC2A3495BB601D8 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		866EC63C539C493A671B6C2F21D1BF41 /* A0SimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BF646DC21EB031017E350FC02F80B6D7 /* A0SimpleKeychain.m */; };
+		886A8D8742BF2FD46CAF7338F7F33D07 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D20926958375697F9986AA0395149F1E /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88AE7B82E58715611F7AE85482E9F3E3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C4EA28487C94B14EBA54698C50FF /* Request.swift */; };
+		88C55179AB90EC0AE757D27B35CF64E6 /* A0SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB91B6F3496C3A3F40B1A0EFA456645 /* A0SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B039732FB3C6B90BFAE39C1FC32BC9F /* WebAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574F5F0D60CFB6962AAD1A6D4F5D13B /* WebAuthError.swift */; };
+		8DACE12D6536B9A91948C3E449BE0A7C /* ControllerModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E593C57961A8F2262FF76906AEDDB /* ControllerModalPresenter.swift */; };
+		8E306F9EFA62D8A9A0FAE89CBA9D782A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C597B96DEC21DEB1F5CC859C801EA2BA /* NSLayoutConstraint+PureLayout.m */; };
+		8F03ECD62ED3A7755BCDD9FF7A12D143 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA458D1F7B1F0DB59A7CE6DE16C7FA0C /* SafariServices.framework */; };
+		904B3DDEB1429C8FA611D032D1ED8C29 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0C8C90D95EB0783E08C170F96934 /* NSArray+PureLayout.m */; };
+		91FBDFBF4E290033A568BAA5FCD7E70A /* SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E1A92AE5F2D415831DF26EF38F0E1D /* SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		953773D44980F4391EEDA660FC29B772 /* A0ChallengeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 419BEC114837542BC1894778BD2E7B7A /* A0ChallengeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95B984C4C4A85BCAFF29E9FD8DE0363F /* Pods-MimoiOSCodingChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEAE4C1EC4830F46B54194DE6EAE676 /* Pods-MimoiOSCodingChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9876AAA8252C6E01A8CA0B3FB3C2FFA1 /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C48184FD6F917C38F36BDDFA0EBD17 /* Telemetry.swift */; };
+		99813ACE2248CFC7C736E6AA70F4C331 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EE438E29D79B3F818722D4381476E /* AuthenticationError.swift */; };
+		9E63282B0B909DE82802048D11CF6688 /* CredentialsManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456AF085C27D8851EBFCF53C1059B32 /* CredentialsManagerError.swift */; };
+		AC857C80D0EB2A284CCA993064A1C842 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB09E79A6402C6236190A76F3290665 /* Result.swift */; };
+		AF7DF97CA3636C4109997B87C1E86E62 /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F709701B09A3B3C2349F912CFA4EA108 /* SimpleKeychain-dummy.m */; };
+		AFB47A35B4E3F4C49B639C67BABAD596 /* ManagementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01219E56E3BB06CC21161A1581FF740E /* ManagementError.swift */; };
+		AFC39E575522EEAC5EEF98233BA5F32B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
+		B27723C2F2552BAF6F84BACD86A66DD8 /* Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44215FE9F742EC8B330F1E52C158F75F /* Auth0.swift */; };
+		B27BFB41E36F3C3FBA9FF8FC7837E6F1 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E276DE2DCB4308E5EA9769349CA162 /* AuthProvider.swift */; };
+		BF0ADB7F82F16EC4AA732B563C5DF5FD /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413458B2AB0CFA0E3C0579D44AC95926 /* Authentication.swift */; };
+		C29E4BC8A324E5C69B7E14FBD2415DFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */; };
+		C351B98FDCC5814C99A452E23DE518C1 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D49830D40F2D39293ADB0030B3BF3D /* Handlers.swift */; };
+		D0A899640865312B3BEF8AD831296BAC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC776A31E516DAF75E0BF713BC09AB9 /* Logger.swift */; };
+		D329B1E4EAFFFB5D8479B0CC019148DE /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C836601049872FE9C447DC95425B10B /* Management.swift */; };
+		D785DFC413B895794B25A5A001AFA08C /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44559E06A67E4E1FB0E35C67F6D8F137 /* TransactionStore.swift */; };
+		DA165C08F0421BE3CBD329DD2A947FD2 /* A0ChallengeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9883DD0EEFB28E184D136F76C3CFA533 /* A0ChallengeGenerator.m */; };
+		DC043466F667F5BA24F6BC248FCEC469 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCCAD50C8AFB5734E10BE56756F7B21 /* ResponseType.swift */; };
+		DC791EF0EB56113EF1E3BD34EDBFF0EE /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1E7C4F4E165AB0E1E9C5A8192E898 /* ALView+PureLayout.m */; };
+		DF2C2CF79BAE9675A2FAA9D68D834017 /* NSURL+Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8CF8100FDDE9954360428F1D0D077E /* NSURL+Auth0.swift */; };
+		E663302A07821E3BF2A392C5F2C3ED3C /* Pods-MimoiOSCodingChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C03C0926D5A0DE8B14C06D978A85C /* Pods-MimoiOSCodingChallenge-dummy.m */; };
 		EB6BFE2F702FC9B0D6F133763E8CC2D4 /* Pods-MimoiOSCodingChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D3FFC72B8E079D60E1D6ED45C5384 /* Pods-MimoiOSCodingChallengeTests-dummy.m */; };
-		F04940044391F4EC462EA565360E57AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F9E6C15E8C9EDD76E7790320A7E1671C /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */; };
+		EC52FA0E672C53844BDA359A16D0F072 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A6598AD07F8ABEDE991C71AB123F2257 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDDDB959A763088C0D77BA23CB27D579 /* NSData+URLSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40F804EF43C91690F49CC425B6A4768 /* NSData+URLSafe.swift */; };
+		F855CFCCCC8FC3A4CEF4E0B4296E9478 /* NativeAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7E7292CA1DE216F85043DF265D94B /* NativeAuth.swift */; };
+		FD43236BE45B1FD0DEA71A881C407E9F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1A7F5DC68CE30815AAC13A3796A8F /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F6F5560C47B06B99D308C05FC29CBE7 /* PBXContainerItemProxy */ = {
+		2BEF695D600A7443816D9F388D5F1A91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6748F1B3FDBCA5C5D3911564DA956C85;
+			remoteGlobalIDString = E25B3196D3767E85F1E1E31E756775D1;
+			remoteInfo = SimpleKeychain;
+		};
+		485EC2DDD28A2436016A30FB0935B29A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45884430992802E909C1C51D1213793A;
+			remoteInfo = Auth0;
+		};
+		835DFE336ACE7E0869974E2B45EC3B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25B3196D3767E85F1E1E31E756775D1;
+			remoteInfo = SimpleKeychain;
+		};
+		9B4BFB6B3B42ABE6E4A8CA135F009656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0D7A9F243915914FDBE9EDD6958D8E9;
 			remoteInfo = PureLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		01219E56E3BB06CC21161A1581FF740E /* ManagementError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagementError.swift; path = Auth0/ManagementError.swift; sourceTree = "<group>"; };
+		02B2A00DD06514EC6AFECFB9543DE686 /* _ObjectiveManagementAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveManagementAPI.swift; path = Auth0/_ObjectiveManagementAPI.swift; sourceTree = "<group>"; };
 		0377CC5EB408E5BCFB76273FE7889FBC /* Pods-MimoiOSCodingChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MimoiOSCodingChallengeTests.modulemap"; sourceTree = "<group>"; };
+		08F2AA6BAB69948EE4706AFD122617FA /* A0SimpleKeychain+KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0SimpleKeychain+KeyPair.h"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.h"; sourceTree = "<group>"; };
 		09E6BF7004DA3B825B0C427F1BD6993B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C725DBFE70AE23754611B0BD1961614 /* UserPatchAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPatchAttributes.swift; path = Auth0/UserPatchAttributes.swift; sourceTree = "<group>"; };
+		0D2B9EC9C0269AA019E5352CBC386399 /* Auth0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.xcconfig; sourceTree = "<group>"; };
+		0D983AF38DA8201CC35E7B2370B08021 /* Auth0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Auth0-dummy.m"; sourceTree = "<group>"; };
 		0EF7F58169E0872CF6B112E6CEA765BF /* Pods-MimoiOSCodingChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
-		234F38BA2CFAF2311EB0D7150B2729EF /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallenge.framework; path = "Pods-MimoiOSCodingChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F6D15FBFD0F219E5AD5387BF012C1C /* NSURLComponents+OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLComponents+OAuth2.swift"; path = "Auth0/NSURLComponents+OAuth2.swift"; sourceTree = "<group>"; };
+		1616473D64186D9A796A8DCC6D32CE99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4CB522A53C9489ABAC9344D296E5A8 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		1C836601049872FE9C447DC95425B10B /* Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Management.swift; path = Auth0/Management.swift; sourceTree = "<group>"; };
+		1CCCAD50C8AFB5734E10BE56756F7B21 /* ResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseType.swift; path = Auth0/ResponseType.swift; sourceTree = "<group>"; };
+		22456A3995969A5407FD0A99C7B96622 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		22C8D5D1CF156B8264C6D600BB5A58EC /* Auth0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-umbrella.h"; sourceTree = "<group>"; };
+		23455100B56021FADC5750CE5FF9544F /* Auth0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Auth0.h; path = Auth0/Auth0.h; sourceTree = "<group>"; };
 		2396A02ECE5C0641B3A68C8BA35C8B9C /* Pods-MimoiOSCodingChallengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallengeUITests-frameworks.sh"; sourceTree = "<group>"; };
-		249938C44B3C707521E098F2C5086AD9 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2EEAE4C1EC4830F46B54194DE6EAE676 /* Pods-MimoiOSCodingChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MimoiOSCodingChallenge-umbrella.h"; sourceTree = "<group>"; };
-		2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		2FB09E79A6402C6236190A76F3290665 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Auth0/Result.swift; sourceTree = "<group>"; };
 		2FD4B26E57B641F424E91F36942BB4A7 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		322070D7AE1867440352CCD412B88A42 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Auth0/Profile.swift; sourceTree = "<group>"; };
+		32F1E7B93DEEC90AD3953FF9C3D97D7C /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
+		33C6BDD14B4DF6A720B26F317B1D9452 /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Auth0/Credentials.swift; sourceTree = "<group>"; };
+		3603656B8E510D26E8844DEB4A95F5D0 /* AuthTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthTransaction.swift; path = Auth0/AuthTransaction.swift; sourceTree = "<group>"; };
+		389241E292067886A082ED0D758B61D4 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		38BB501497C20211EC9ECB620656477F /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A958A409B7C4DED63049EF92AC82A83 /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallengeUITests.framework; path = "Pods-MimoiOSCodingChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D06A55496E1A468C1F09B47A4B34E75 /* SafariWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariWebAuth.swift; path = Auth0/SafariWebAuth.swift; sourceTree = "<group>"; };
 		400ECF4FE9E5548189FE2FD70CC5A23E /* Pods-MimoiOSCodingChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallenge-resources.sh"; sourceTree = "<group>"; };
+		40671120A7078CB56D7F53DD6EE6AB79 /* Auth0Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Authentication.swift; path = Auth0/Auth0Authentication.swift; sourceTree = "<group>"; };
+		40DACDE59DF1A5E4BC51478E5022AC36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413458B2AB0CFA0E3C0579D44AC95926 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth0/Authentication.swift; sourceTree = "<group>"; };
+		419BEC114837542BC1894778BD2E7B7A /* A0ChallengeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChallengeGenerator.h; path = Auth0/A0ChallengeGenerator.h; sourceTree = "<group>"; };
+		424815105B547FCAA858B8CBD245CA17 /* SafariSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariSession.swift; path = Auth0/SafariSession.swift; sourceTree = "<group>"; };
+		44215FE9F742EC8B330F1E52C158F75F /* Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0.swift; path = Auth0/Auth0.swift; sourceTree = "<group>"; };
+		44559E06A67E4E1FB0E35C67F6D8F137 /* TransactionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionStore.swift; path = Auth0/TransactionStore.swift; sourceTree = "<group>"; };
+		484DAEFD91C819BD789445086D43634F /* Auth0Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Error.swift; path = Auth0/Auth0Error.swift; sourceTree = "<group>"; };
+		48940E6F5D71BFFD6587726148B7821B /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
+		494C458F59EAE1DC70DF7B61B87B96E3 /* Pods_MimoiOSCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallengeTests.framework; path = "Pods-MimoiOSCodingChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0D3FFC72B8E079D60E1D6ED45C5384 /* Pods-MimoiOSCodingChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MimoiOSCodingChallengeTests-dummy.m"; sourceTree = "<group>"; };
-		4F74BE817943750392374633261525E7 /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallengeUITests.framework; path = "Pods-MimoiOSCodingChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5E593C57961A8F2262FF76906AEDDB /* ControllerModalPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerModalPresenter.swift; path = Auth0/ControllerModalPresenter.swift; sourceTree = "<group>"; };
+		4CB91B6F3496C3A3F40B1A0EFA456645 /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
 		50C5988C9C3231BA8FECD2173C7E2F61 /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		532239DB666CBB66DF324E5F06013CBA /* Pods-MimoiOSCodingChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MimoiOSCodingChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54C0D6E5750733C54AFAAC67EDD232E3 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Auth0/Users.swift; sourceTree = "<group>"; };
+		56B8CE990C51850EE5B6AE5710D069D5 /* _ObjectiveWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveWebAuth.swift; path = Auth0/_ObjectiveWebAuth.swift; sourceTree = "<group>"; };
 		5AB1C5B9C2D59CED5FD34C56A1F39830 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
-		5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		6D986837FA46C6AB4A8D72FCAA1B4454 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		614EBC4EF5430AE910143A88AB988E2A /* Loggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loggable.swift; path = Auth0/Loggable.swift; sourceTree = "<group>"; };
+		650CCEC6973E9AA5D9F0AAE0E790F261 /* CredentialsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManager.swift; path = Auth0/CredentialsManager.swift; sourceTree = "<group>"; };
+		6CA4A2B61F99561E262A0F69FA480CF9 /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain.framework; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7197BEB7F86DB6A01C1067EF80DE9735 /* JSONObjectPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONObjectPayload.swift; path = Auth0/JSONObjectPayload.swift; sourceTree = "<group>"; };
+		77B828E59D909A66249A545E5436939B /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		7DFA4035AC52E0B8C839B92C01808AB5 /* OAuth2Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Grant.swift; path = Auth0/OAuth2Grant.swift; sourceTree = "<group>"; };
 		7E18D911896C58767C8BB1F4EDEA3CF1 /* Pods-MimoiOSCodingChallengeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallengeUITests-resources.sh"; sourceTree = "<group>"; };
-		808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		88E276DE2DCB4308E5EA9769349CA162 /* AuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Auth0/AuthProvider.swift; sourceTree = "<group>"; };
 		89629ADC97DD3DFCBDC2F487FA501106 /* Pods-MimoiOSCodingChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MimoiOSCodingChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A3EE438E29D79B3F818722D4381476E /* AuthenticationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationError.swift; path = Auth0/AuthenticationError.swift; sourceTree = "<group>"; };
+		8B4A552EF0AD4D77F59B190117AD7532 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		8E95C3DAFCB40DDDFF8A31BFC0F204C6 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Auth0/Identity.swift; sourceTree = "<group>"; };
 		8EC0D8DB8C227ADF362E76B0211F482B /* Pods-MimoiOSCodingChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MimoiOSCodingChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		8FE653E4DCA416CF685A3CBB92DE7568 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D36E573EDD2EAC99B9AB223AA20C79 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		934001D96C413F25AA536BC3C89F1B23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95133B868E25491DA700A416238E3405 /* Pods-MimoiOSCodingChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimoiOSCodingChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9883DD0EEFB28E184D136F76C3CFA533 /* A0ChallengeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChallengeGenerator.m; path = Auth0/A0ChallengeGenerator.m; sourceTree = "<group>"; };
+		9AD5C30E247D81E4ED0C46794D0E7A26 /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Auth0/Requestable.swift; sourceTree = "<group>"; };
 		9B6B064B7A474C166ED0B5F285326E2C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B76E24C86CD6A9A3C476EAB96F45E7C /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallenge.framework; path = "Pods-MimoiOSCodingChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDECCE5FBCA389343E556D30A8DBA96 /* NSError+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+Helper.swift"; path = "Auth0/NSError+Helper.swift"; sourceTree = "<group>"; };
+		9EE1A7F5DC68CE30815AAC13A3796A8F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Auth0/Response.swift; sourceTree = "<group>"; };
+		A1D1E7C4F4E165AB0E1E9C5A8192E898 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		A2BFD857B4FE6338BFA5792D05BF09CA /* Pods-MimoiOSCodingChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimoiOSCodingChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
-		AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		B0FB5C2ECBAD17E5C0A3427C4F60C5EC /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22BCE341EC833E8516EA8CB74787477 /* Pods_MimoiOSCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MimoiOSCodingChallengeTests.framework; path = "Pods-MimoiOSCodingChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63DE00FAD15ED6A8618ADF59A3E0695 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6598AD07F8ABEDE991C71AB123F2257 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		A80206597DFEE9B59026F500E95A6BA9 /* _ObjectiveAuthenticationAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveAuthenticationAPI.swift; path = Auth0/_ObjectiveAuthenticationAPI.swift; sourceTree = "<group>"; };
+		AAAA0C8C90D95EB0783E08C170F96934 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		B5A9EA0A8DB495CFD750474EB8D20490 /* SimpleKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-umbrella.h"; sourceTree = "<group>"; };
+		B829690EF6A57371FC061EE88BB65F96 /* Auth0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-prefix.pch"; sourceTree = "<group>"; };
+		BA954992DA34E9CE2643D9D4461A2335 /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
+		BB6C98706C7C6D198DCF53581E9BAFBE /* Auth0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Auth0.modulemap; sourceTree = "<group>"; };
+		BF5A90D6E13BE0E5C71ED0A99C495B17 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		BF646DC21EB031017E350FC02F80B6D7 /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
+		BFC776A31E516DAF75E0BF713BC09AB9 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Auth0/Logger.swift; sourceTree = "<group>"; };
+		C12C608683B1415E7E45E069F3AFA795 /* SilentSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentSafariViewController.swift; path = Auth0/SilentSafariViewController.swift; sourceTree = "<group>"; };
 		C3227C0AC64D3472A39CA215D8EE6788 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C3D7E7292CA1DE216F85043DF265D94B /* NativeAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeAuth.swift; path = Auth0/NativeAuth.swift; sourceTree = "<group>"; };
 		C401B6DA8077C3EB8DD60F6B43D361E7 /* Pods-MimoiOSCodingChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MimoiOSCodingChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C597B96DEC21DEB1F5CC859C801EA2BA /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		C79ED766652E3162AB528B9AA4CE4F0E /* Auth0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Auth0.framework; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C911B3853FC6F5A7ABF9A7A4FFDAA134 /* Pods-MimoiOSCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CA458D1F7B1F0DB59A7CE6DE16C7FA0C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		CB8CF8100FDDE9954360428F1D0D077E /* NSURL+Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Auth0.swift"; path = "Auth0/NSURL+Auth0.swift"; sourceTree = "<group>"; };
 		CC98D1226E3C02E67DBCEB81B387404E /* Pods-MimoiOSCodingChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallengeTests-resources.sh"; sourceTree = "<group>"; };
 		D18CA9F20F20FD62907DD63BAD08D296 /* Pods-MimoiOSCodingChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MimoiOSCodingChallenge-frameworks.sh"; sourceTree = "<group>"; };
-		D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		D20926958375697F9986AA0395149F1E /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		D3C48184FD6F917C38F36BDDFA0EBD17 /* Telemetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Telemetry.swift; path = Auth0/Telemetry.swift; sourceTree = "<group>"; };
+		D456AF085C27D8851EBFCF53C1059B32 /* CredentialsManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManagerError.swift; path = Auth0/CredentialsManagerError.swift; sourceTree = "<group>"; };
+		D7550BD19B2C6202D28D6CBD19F000DB /* SimpleKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.xcconfig; sourceTree = "<group>"; };
 		D902C2BC5637DF488238528DF253B430 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MimoiOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		DC48A19E2AA264922693A9C30BC30743 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C142CCE6A2E8415E4094FE455195DA /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		DA334EBFB80BBF22C807869566E14DA2 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		DD9C03C0926D5A0DE8B14C06D978A85C /* Pods-MimoiOSCodingChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MimoiOSCodingChallenge-dummy.m"; sourceTree = "<group>"; };
+		E0D49830D40F2D39293ADB0030B3BF3D /* Handlers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handlers.swift; path = Auth0/Handlers.swift; sourceTree = "<group>"; };
+		E358C4EA28487C94B14EBA54698C50FF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Auth0/Request.swift; sourceTree = "<group>"; };
+		E40F804EF43C91690F49CC425B6A4768 /* NSData+URLSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+URLSafe.swift"; path = "Auth0/NSData+URLSafe.swift"; sourceTree = "<group>"; };
 		E41F94F1A1D54996A06E2896AE78E666 /* Pods-MimoiOSCodingChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MimoiOSCodingChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		E574F5F0D60CFB6962AAD1A6D4F5D13B /* WebAuthError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuthError.swift; path = Auth0/WebAuthError.swift; sourceTree = "<group>"; };
 		E57DEDA34D3C76A200978A9B830EB482 /* Pods-MimoiOSCodingChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MimoiOSCodingChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		E5C91B2A30A329E0BE95F0A618A3800C /* WebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuth.swift; path = Auth0/WebAuth.swift; sourceTree = "<group>"; };
+		E6E1A92AE5F2D415831DF26EF38F0E1D /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
 		EA6182916D32BAC2D867B18267B38869 /* Pods-MimoiOSCodingChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MimoiOSCodingChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
 		EAC762F5397BBF6591AC678A1ADFA1D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE2D892C86EBE5451F796074FF727EB /* Pods-MimoiOSCodingChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MimoiOSCodingChallenge.modulemap"; sourceTree = "<group>"; };
-		F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		F709701B09A3B3C2349F912CFA4EA108 /* SimpleKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKeychain-dummy.m"; sourceTree = "<group>"; };
 		FC71F456311D00484AB07822AE820C06 /* Pods-MimoiOSCodingChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MimoiOSCodingChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0962CEF5D02ED8C57EF195DBBB079892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D593EC65CF82ABF5296E444C9DD495D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E4B685FDE4FAC6812493159666E8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320C5F01C5A710A65FC10D4EE6383F20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		980E9071AFF0AAE39B4CA66D74B269FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2E5762A0883326595C092F4A177836 /* Foundation.framework in Frameworks */,
+				AFC39E575522EEAC5EEF98233BA5F32B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC23472EE7346B6ADAE6EAEB03AEEA4E /* Frameworks */ = {
+		AA8ECDCF2465FA20983E5B54DEC69ECC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04940044391F4EC462EA565360E57AB /* Foundation.framework in Frameworks */,
+				3C32E4E95F668C09C0522027DBEB0458 /* Foundation.framework in Frameworks */,
+				8F03ECD62ED3A7755BCDD9FF7A12D143 /* SafariServices.framework in Frameworks */,
+				1D1F5B37B6ED1438B55CB4483F35BF8D /* SimpleKeychain.framework in Frameworks */,
+				62BBB96373649FBFCEA6B47F910B3D54 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA82020E52E17D826FFCADB5041F16F0 /* Frameworks */ = {
+		D62AA13A25771F5B8298E59D3D961BBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11886DC424726C9B3EE6AD58BA4E7491 /* Foundation.framework in Frameworks */,
+				29734CBC63E8911896A7CED5762814A9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +289,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC60022D6863624E0A0CB3FF0213AFD8 /* Foundation.framework in Frameworks */,
+				C29E4BC8A324E5C69B7E14FBD2415DFA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,82 +324,162 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2F7CB2F8AA04108B4168449AFCA94214 /* Support Files */ = {
+		0EC04CAF57E4687039EBD8C02EC18D33 /* Auth0 */ = {
 			isa = PBXGroup;
 			children = (
-				DC48A19E2AA264922693A9C30BC30743 /* Info.plist */,
-				249938C44B3C707521E098F2C5086AD9 /* PureLayout.modulemap */,
-				01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */,
-				808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */,
-				6D986837FA46C6AB4A8D72FCAA1B4454 /* PureLayout-prefix.pch */,
-				6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */,
+				A80206597DFEE9B59026F500E95A6BA9 /* _ObjectiveAuthenticationAPI.swift */,
+				02B2A00DD06514EC6AFECFB9543DE686 /* _ObjectiveManagementAPI.swift */,
+				56B8CE990C51850EE5B6AE5710D069D5 /* _ObjectiveWebAuth.swift */,
+				419BEC114837542BC1894778BD2E7B7A /* A0ChallengeGenerator.h */,
+				9883DD0EEFB28E184D136F76C3CFA533 /* A0ChallengeGenerator.m */,
+				23455100B56021FADC5750CE5FF9544F /* Auth0.h */,
+				44215FE9F742EC8B330F1E52C158F75F /* Auth0.swift */,
+				40671120A7078CB56D7F53DD6EE6AB79 /* Auth0Authentication.swift */,
+				484DAEFD91C819BD789445086D43634F /* Auth0Error.swift */,
+				413458B2AB0CFA0E3C0579D44AC95926 /* Authentication.swift */,
+				8A3EE438E29D79B3F818722D4381476E /* AuthenticationError.swift */,
+				88E276DE2DCB4308E5EA9769349CA162 /* AuthProvider.swift */,
+				3603656B8E510D26E8844DEB4A95F5D0 /* AuthTransaction.swift */,
+				4C5E593C57961A8F2262FF76906AEDDB /* ControllerModalPresenter.swift */,
+				33C6BDD14B4DF6A720B26F317B1D9452 /* Credentials.swift */,
+				650CCEC6973E9AA5D9F0AAE0E790F261 /* CredentialsManager.swift */,
+				D456AF085C27D8851EBFCF53C1059B32 /* CredentialsManagerError.swift */,
+				E0D49830D40F2D39293ADB0030B3BF3D /* Handlers.swift */,
+				8E95C3DAFCB40DDDFF8A31BFC0F204C6 /* Identity.swift */,
+				7197BEB7F86DB6A01C1067EF80DE9735 /* JSONObjectPayload.swift */,
+				614EBC4EF5430AE910143A88AB988E2A /* Loggable.swift */,
+				BFC776A31E516DAF75E0BF713BC09AB9 /* Logger.swift */,
+				1C836601049872FE9C447DC95425B10B /* Management.swift */,
+				01219E56E3BB06CC21161A1581FF740E /* ManagementError.swift */,
+				C3D7E7292CA1DE216F85043DF265D94B /* NativeAuth.swift */,
+				E40F804EF43C91690F49CC425B6A4768 /* NSData+URLSafe.swift */,
+				9EDECCE5FBCA389343E556D30A8DBA96 /* NSError+Helper.swift */,
+				CB8CF8100FDDE9954360428F1D0D077E /* NSURL+Auth0.swift */,
+				15F6D15FBFD0F219E5AD5387BF012C1C /* NSURLComponents+OAuth2.swift */,
+				7DFA4035AC52E0B8C839B92C01808AB5 /* OAuth2Grant.swift */,
+				322070D7AE1867440352CCD412B88A42 /* Profile.swift */,
+				E358C4EA28487C94B14EBA54698C50FF /* Request.swift */,
+				9AD5C30E247D81E4ED0C46794D0E7A26 /* Requestable.swift */,
+				9EE1A7F5DC68CE30815AAC13A3796A8F /* Response.swift */,
+				1CCCAD50C8AFB5734E10BE56756F7B21 /* ResponseType.swift */,
+				2FB09E79A6402C6236190A76F3290665 /* Result.swift */,
+				424815105B547FCAA858B8CBD245CA17 /* SafariSession.swift */,
+				3D06A55496E1A468C1F09B47A4B34E75 /* SafariWebAuth.swift */,
+				C12C608683B1415E7E45E069F3AFA795 /* SilentSafariViewController.swift */,
+				D3C48184FD6F917C38F36BDDFA0EBD17 /* Telemetry.swift */,
+				44559E06A67E4E1FB0E35C67F6D8F137 /* TransactionStore.swift */,
+				0C725DBFE70AE23754611B0BD1961614 /* UserPatchAttributes.swift */,
+				54C0D6E5750733C54AFAAC67EDD232E3 /* Users.swift */,
+				E5C91B2A30A329E0BE95F0A618A3800C /* WebAuth.swift */,
+				E574F5F0D60CFB6962AAD1A6D4F5D13B /* WebAuthError.swift */,
+				D6ADBF95036402613E1D06FE178D2169 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
+			name = Auth0;
+			path = Auth0;
 			sourceTree = "<group>";
 		};
-		477DE8C7BA9A81A853AA69F51BC05E9B /* Products */ = {
+		29955C2DA4CE05BB8B35D32A455CF1C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				234F38BA2CFAF2311EB0D7150B2729EF /* Pods_MimoiOSCodingChallenge.framework */,
-				B22BCE341EC833E8516EA8CB74787477 /* Pods_MimoiOSCodingChallengeTests.framework */,
-				4F74BE817943750392374633261525E7 /* Pods_MimoiOSCodingChallengeUITests.framework */,
-				B0FB5C2ECBAD17E5C0A3427C4F60C5EC /* PureLayout.framework */,
+				C79ED766652E3162AB528B9AA4CE4F0E /* Auth0.framework */,
+				9B76E24C86CD6A9A3C476EAB96F45E7C /* Pods_MimoiOSCodingChallenge.framework */,
+				494C458F59EAE1DC70DF7B61B87B96E3 /* Pods_MimoiOSCodingChallengeTests.framework */,
+				3A958A409B7C4DED63049EF92AC82A83 /* Pods_MimoiOSCodingChallengeUITests.framework */,
+				8FE653E4DCA416CF685A3CBB92DE7568 /* PureLayout.framework */,
+				6CA4A2B61F99561E262A0F69FA480CF9 /* SimpleKeychain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		342F795776C0EF205D5AFB61A529F61F /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				77B828E59D909A66249A545E5436939B /* ALView+PureLayout.h */,
+				A1D1E7C4F4E165AB0E1E9C5A8192E898 /* ALView+PureLayout.m */,
+				8B4A552EF0AD4D77F59B190117AD7532 /* NSArray+PureLayout.h */,
+				AAAA0C8C90D95EB0783E08C170F96934 /* NSArray+PureLayout.m */,
+				D20926958375697F9986AA0395149F1E /* NSLayoutConstraint+PureLayout.h */,
+				C597B96DEC21DEB1F5CC859C801EA2BA /* NSLayoutConstraint+PureLayout.m */,
+				A6598AD07F8ABEDE991C71AB123F2257 /* PureLayout.h */,
+				22456A3995969A5407FD0A99C7B96622 /* PureLayout+Internal.h */,
+				DA334EBFB80BBF22C807869566E14DA2 /* PureLayoutDefines.h */,
+				FC3539AD0701AC84AC79CDA811358B2F /* Support Files */,
 			);
-			name = iOS;
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		5DDE20E00CAC118AB91722D857123CCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EC04CAF57E4687039EBD8C02EC18D33 /* Auth0 */,
+				342F795776C0EF205D5AFB61A529F61F /* PureLayout */,
+				9FE91A3E78C5EBFA380A45E62DD2259D /* SimpleKeychain */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A2FDD832DA64F35B104DD4C55A31BF8E /* Pods */,
-				477DE8C7BA9A81A853AA69F51BC05E9B /* Products */,
+				FC4CD6CB8A52CDD2AC1873F0380269CD /* Frameworks */,
+				5DDE20E00CAC118AB91722D857123CCA /* Pods */,
+				29955C2DA4CE05BB8B35D32A455CF1C8 /* Products */,
 				07FAB9945B5CE564CBA9D0693985B157 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9C6F93A5AE4A9293598494393460DF93 /* PureLayout */ = {
+		7F9BDC5420ECBEB600993596870834C4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */,
-				3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */,
-				256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */,
-				D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */,
-				2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */,
-				62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */,
-				261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */,
-				AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */,
-				5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */,
-				2F7CB2F8AA04108B4168449AFCA94214 /* Support Files */,
+				1616473D64186D9A796A8DCC6D32CE99 /* Info.plist */,
+				32F1E7B93DEEC90AD3953FF9C3D97D7C /* SimpleKeychain.modulemap */,
+				D7550BD19B2C6202D28D6CBD19F000DB /* SimpleKeychain.xcconfig */,
+				F709701B09A3B3C2349F912CFA4EA108 /* SimpleKeychain-dummy.m */,
+				BA954992DA34E9CE2643D9D4461A2335 /* SimpleKeychain-prefix.pch */,
+				B5A9EA0A8DB495CFD750474EB8D20490 /* SimpleKeychain-umbrella.h */,
 			);
-			name = PureLayout;
-			path = PureLayout;
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKeychain";
 			sourceTree = "<group>";
 		};
-		A2FDD832DA64F35B104DD4C55A31BF8E /* Pods */ = {
+		9FE91A3E78C5EBFA380A45E62DD2259D /* SimpleKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				9C6F93A5AE4A9293598494393460DF93 /* PureLayout */,
+				4CB91B6F3496C3A3F40B1A0EFA456645 /* A0SimpleKeychain.h */,
+				BF646DC21EB031017E350FC02F80B6D7 /* A0SimpleKeychain.m */,
+				08F2AA6BAB69948EE4706AFD122617FA /* A0SimpleKeychain+KeyPair.h */,
+				48940E6F5D71BFFD6587726148B7821B /* A0SimpleKeychain+KeyPair.m */,
+				E6E1A92AE5F2D415831DF26EF38F0E1D /* SimpleKeychain.h */,
+				7F9BDC5420ECBEB600993596870834C4 /* Support Files */,
 			);
-			name = Pods;
+			name = SimpleKeychain;
+			path = SimpleKeychain;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D6ADBF95036402613E1D06FE178D2169 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				BB6C98706C7C6D198DCF53581E9BAFBE /* Auth0.modulemap */,
+				0D2B9EC9C0269AA019E5352CBC386399 /* Auth0.xcconfig */,
+				0D983AF38DA8201CC35E7B2370B08021 /* Auth0-dummy.m */,
+				B829690EF6A57371FC061EE88BB65F96 /* Auth0-prefix.pch */,
+				22C8D5D1CF156B8264C6D600BB5A58EC /* Auth0-umbrella.h */,
+				40DACDE59DF1A5E4BC51478E5022AC36 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Auth0";
+			sourceTree = "<group>";
+		};
+		DBB2A72BC0F902A840201D9743BB3EF1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CC56446484CB20EB77323D4A75A2E /* Foundation.framework */,
+				CA458D1F7B1F0DB59A7CE6DE16C7FA0C /* SafariServices.framework */,
+				934001D96C413F25AA536BC3C89F1B23 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E4F5B8EFC209564ED0BB8AAC15C0B150 /* Pods-MimoiOSCodingChallengeUITests */ = {
@@ -272,14 +518,61 @@
 			path = "Target Support Files/Pods-MimoiOSCodingChallengeTests";
 			sourceTree = "<group>";
 		};
+		FC3539AD0701AC84AC79CDA811358B2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A63DE00FAD15ED6A8618ADF59A3E0695 /* Info.plist */,
+				1B4CB522A53C9489ABAC9344D296E5A8 /* PureLayout.modulemap */,
+				BF5A90D6E13BE0E5C71ED0A99C495B17 /* PureLayout.xcconfig */,
+				91D36E573EDD2EAC99B9AB223AA20C79 /* PureLayout-dummy.m */,
+				D9C142CCE6A2E8415E4094FE455195DA /* PureLayout-prefix.pch */,
+				389241E292067886A082ED0D758B61D4 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		FC4CD6CB8A52CDD2AC1873F0380269CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38BB501497C20211EC9ECB620656477F /* SimpleKeychain.framework */,
+				DBB2A72BC0F902A840201D9743BB3EF1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4B7957D3931C5907E3B567B3C9620989 /* Headers */ = {
+		293106F8C82E7592B12CF3E6A51D4A81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE6F25E690CE68F90A023CEAEEB0255 /* Pods-MimoiOSCodingChallenge-umbrella.h in Headers */,
+				62643DAAAB215C414C68ACDB36B00DCA /* ALView+PureLayout.h in Headers */,
+				26AB8A5AD28B1D29B61BCC5EC93D5DA8 /* NSArray+PureLayout.h in Headers */,
+				886A8D8742BF2FD46CAF7338F7F33D07 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				14C4215DFF618DF0FBABEE04D2C343D6 /* PureLayout+Internal.h in Headers */,
+				05ABA3B13430FE65832BC580E56109F7 /* PureLayout-umbrella.h in Headers */,
+				EC52FA0E672C53844BDA359A16D0F072 /* PureLayout.h in Headers */,
+				4488F1957D30552D03B99309C41C8EBE /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFACC2A8A08F51D8D4D2A4C9C60C3ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B984C4C4A85BCAFF29E9FD8DE0363F /* Pods-MimoiOSCodingChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A282A9327AB82AEDE93B613DFD373EAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953773D44980F4391EEDA660FC29B772 /* A0ChallengeGenerator.h in Headers */,
+				39F30AB0255301A1F1D9D31FABD5E282 /* Auth0-umbrella.h in Headers */,
+				44E910073469130A1F5D42D49BFB864F /* Auth0.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,17 +584,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E78446FFAE8C14DFE04FCEDB576E04CE /* Headers */ = {
+		EFE70F2089993053EBD825D957C6AF45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3D46C3AC7059F9BE5DD6B434D51AB2 /* ALView+PureLayout.h in Headers */,
-				24D456F0205BA38C734AA7DB181FD1FD /* NSArray+PureLayout.h in Headers */,
-				7F6B57DA08F4D85758657F3EC8A7902F /* NSLayoutConstraint+PureLayout.h in Headers */,
-				B8457DB7FA4243FF02128117FBD5A41C /* PureLayout+Internal.h in Headers */,
-				BF0689F447313F95876996B740D315EE /* PureLayout-umbrella.h in Headers */,
-				E61010ACEA1F28BF5DC2A3495BB601D8 /* PureLayout.h in Headers */,
-				27357E6525617E8679A4BCA9DC582050 /* PureLayoutDefines.h in Headers */,
+				6A7246A69F7CEBC9B6D169A61367D3C7 /* A0SimpleKeychain+KeyPair.h in Headers */,
+				88C55179AB90EC0AE757D27B35CF64E6 /* A0SimpleKeychain.h in Headers */,
+				83CE30F1313239B06904A06A74FF3935 /* SimpleKeychain-umbrella.h in Headers */,
+				91FBDFBF4E290033A568BAA5FCD7E70A /* SimpleKeychain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,21 +606,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6748F1B3FDBCA5C5D3911564DA956C85 /* PureLayout */ = {
+		45884430992802E909C1C51D1213793A /* Auth0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57E1F18C73CD001B0459480B814D7BE1 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildConfigurationList = 70129069866FE6895EC7D4FA464E4B8B /* Build configuration list for PBXNativeTarget "Auth0" */;
 			buildPhases = (
-				5A427511FD9E067A430132152995DED2 /* Sources */,
-				DA82020E52E17D826FFCADB5041F16F0 /* Frameworks */,
-				E78446FFAE8C14DFE04FCEDB576E04CE /* Headers */,
+				88FF25ACCBD535BA234D424336AEC5A8 /* Sources */,
+				AA8ECDCF2465FA20983E5B54DEC69ECC /* Frameworks */,
+				A282A9327AB82AEDE93B613DFD373EAE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EAB5391DCBF3951AFC67BB7AAD406DAF /* PBXTargetDependency */,
 			);
-			name = PureLayout;
-			productName = PureLayout;
-			productReference = B0FB5C2ECBAD17E5C0A3427C4F60C5EC /* PureLayout.framework */;
+			name = Auth0;
+			productName = Auth0;
+			productReference = C79ED766652E3162AB528B9AA4CE4F0E /* Auth0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C5C47B2555FEB95BC590D0C81AF8B95 /* Pods-MimoiOSCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54BC8638CD82A19FA3716273BB54D7C /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallenge" */;
+			buildPhases = (
+				326A4FF8D19E270DDDD85FE7510AE398 /* Sources */,
+				0962CEF5D02ED8C57EF195DBBB079892 /* Frameworks */,
+				9FFACC2A8A08F51D8D4D2A4C9C60C3ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C6A7EAD6FF4BF6769048CFDAE917E03 /* PBXTargetDependency */,
+				78D618064C93AFE443AF3B4CEE8C7041 /* PBXTargetDependency */,
+				304E9902FCD8E6FA426DAB74202DDE00 /* PBXTargetDependency */,
+			);
+			name = "Pods-MimoiOSCodingChallenge";
+			productName = "Pods-MimoiOSCodingChallenge";
+			productReference = 9B76E24C86CD6A9A3C476EAB96F45E7C /* Pods_MimoiOSCodingChallenge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7E11C99856DC1F64F9457D7B6D8BC048 /* Pods-MimoiOSCodingChallengeTests */ = {
@@ -347,7 +658,7 @@
 			);
 			name = "Pods-MimoiOSCodingChallengeTests";
 			productName = "Pods-MimoiOSCodingChallengeTests";
-			productReference = B22BCE341EC833E8516EA8CB74787477 /* Pods_MimoiOSCodingChallengeTests.framework */;
+			productReference = 494C458F59EAE1DC70DF7B61B87B96E3 /* Pods_MimoiOSCodingChallengeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8F81FB2F88B3D430564BC29926C300AD /* Pods-MimoiOSCodingChallengeUITests */ = {
@@ -364,25 +675,41 @@
 			);
 			name = "Pods-MimoiOSCodingChallengeUITests";
 			productName = "Pods-MimoiOSCodingChallengeUITests";
-			productReference = 4F74BE817943750392374633261525E7 /* Pods_MimoiOSCodingChallengeUITests.framework */;
+			productReference = 3A958A409B7C4DED63049EF92AC82A83 /* Pods_MimoiOSCodingChallengeUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AED0E7792D39E9067B538A928E7889A4 /* Pods-MimoiOSCodingChallenge */ = {
+		B0D7A9F243915914FDBE9EDD6958D8E9 /* PureLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 833570E9F36C62860A191FCCFA4768F5 /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallenge" */;
+			buildConfigurationList = 9A999D011C9E422E4BD81181B497E34F /* Build configuration list for PBXNativeTarget "PureLayout" */;
 			buildPhases = (
-				0ED26192D426A383703C2595E11B47F1 /* Sources */,
-				BC23472EE7346B6ADAE6EAEB03AEEA4E /* Frameworks */,
-				4B7957D3931C5907E3B567B3C9620989 /* Headers */,
+				60675C8199208F24D7D4A92DA965A5B3 /* Sources */,
+				D62AA13A25771F5B8298E59D3D961BBB /* Frameworks */,
+				293106F8C82E7592B12CF3E6A51D4A81 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7F9F274A5EA57A3A21B0AEA5F0B7037F /* PBXTargetDependency */,
 			);
-			name = "Pods-MimoiOSCodingChallenge";
-			productName = "Pods-MimoiOSCodingChallenge";
-			productReference = 234F38BA2CFAF2311EB0D7150B2729EF /* Pods_MimoiOSCodingChallenge.framework */;
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 8FE653E4DCA416CF685A3CBB92DE7568 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E25B3196D3767E85F1E1E31E756775D1 /* SimpleKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B5BB604B64F7995127BB1D6E9BED7D /* Build configuration list for PBXNativeTarget "SimpleKeychain" */;
+			buildPhases = (
+				B69E9B509E2FB3684B08A63FC1FF8D15 /* Sources */,
+				88E4B685FDE4FAC6812493159666E8C6 /* Frameworks */,
+				EFE70F2089993053EBD825D957C6AF45 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleKeychain;
+			productName = SimpleKeychain;
+			productReference = 6CA4A2B61F99561E262A0F69FA480CF9 /* SimpleKeychain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -391,7 +718,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -402,24 +729,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 477DE8C7BA9A81A853AA69F51BC05E9B /* Products */;
+			productRefGroup = 29955C2DA4CE05BB8B35D32A455CF1C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AED0E7792D39E9067B538A928E7889A4 /* Pods-MimoiOSCodingChallenge */,
+				45884430992802E909C1C51D1213793A /* Auth0 */,
+				7C5C47B2555FEB95BC590D0C81AF8B95 /* Pods-MimoiOSCodingChallenge */,
 				7E11C99856DC1F64F9457D7B6D8BC048 /* Pods-MimoiOSCodingChallengeTests */,
 				8F81FB2F88B3D430564BC29926C300AD /* Pods-MimoiOSCodingChallengeUITests */,
-				6748F1B3FDBCA5C5D3911564DA956C85 /* PureLayout */,
+				B0D7A9F243915914FDBE9EDD6958D8E9 /* PureLayout */,
+				E25B3196D3767E85F1E1E31E756775D1 /* SimpleKeychain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0ED26192D426A383703C2595E11B47F1 /* Sources */ = {
+		326A4FF8D19E270DDDD85FE7510AE398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6948BA274EFE29208CDC769BFBC46 /* Pods-MimoiOSCodingChallenge-dummy.m in Sources */,
+				E663302A07821E3BF2A392C5F2C3ED3C /* Pods-MimoiOSCodingChallenge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,14 +760,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A427511FD9E067A430132152995DED2 /* Sources */ = {
+		60675C8199208F24D7D4A92DA965A5B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90E3A03A806C1FA318E4C8B3F6D04F6 /* ALView+PureLayout.m in Sources */,
-				5B965C3E51DB0A14405AF4AE50780172 /* NSArray+PureLayout.m in Sources */,
-				F9E6C15E8C9EDD76E7790320A7E1671C /* NSLayoutConstraint+PureLayout.m in Sources */,
-				7E6CE3F55DA98BF78C3C7AD08DF73797 /* PureLayout-dummy.m in Sources */,
+				DC791EF0EB56113EF1E3BD34EDBFF0EE /* ALView+PureLayout.m in Sources */,
+				904B3DDEB1429C8FA611D032D1ED8C29 /* NSArray+PureLayout.m in Sources */,
+				8E306F9EFA62D8A9A0FAE89CBA9D782A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				57A4591FDFFF9342CE4E36B4F6EC6A9E /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FF25ACCBD535BA234D424336AEC5A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226E7E52AE401F86DF468F57AEF14551 /* _ObjectiveAuthenticationAPI.swift in Sources */,
+				6ADC6CFCF256C0432900BAB6780EF22F /* _ObjectiveManagementAPI.swift in Sources */,
+				3CC23BC718E5063EBFCC0316F1F47BC1 /* _ObjectiveWebAuth.swift in Sources */,
+				DA165C08F0421BE3CBD329DD2A947FD2 /* A0ChallengeGenerator.m in Sources */,
+				1FC70628678E41A71CAD21ED78E8419C /* Auth0-dummy.m in Sources */,
+				B27723C2F2552BAF6F84BACD86A66DD8 /* Auth0.swift in Sources */,
+				72D80D7C3F991475A3353785EE300DE1 /* Auth0Authentication.swift in Sources */,
+				13BF98BB9BA5DB0DBFC8CDFC5AF308E0 /* Auth0Error.swift in Sources */,
+				BF0ADB7F82F16EC4AA732B563C5DF5FD /* Authentication.swift in Sources */,
+				99813ACE2248CFC7C736E6AA70F4C331 /* AuthenticationError.swift in Sources */,
+				B27BFB41E36F3C3FBA9FF8FC7837E6F1 /* AuthProvider.swift in Sources */,
+				42E6F9D27D0655D11C6C1CFD55B24A3E /* AuthTransaction.swift in Sources */,
+				8DACE12D6536B9A91948C3E449BE0A7C /* ControllerModalPresenter.swift in Sources */,
+				267EAAE0C78451F234D6F04A3DFC8304 /* Credentials.swift in Sources */,
+				025EC706E60EE52D64DAB5FE62B94B8D /* CredentialsManager.swift in Sources */,
+				9E63282B0B909DE82802048D11CF6688 /* CredentialsManagerError.swift in Sources */,
+				C351B98FDCC5814C99A452E23DE518C1 /* Handlers.swift in Sources */,
+				5EC3DE9B8DAABF54B430BB146B283E0A /* Identity.swift in Sources */,
+				69B277369BECA2116F4919A39F653965 /* JSONObjectPayload.swift in Sources */,
+				7F7A6251ED7F1AC7E7A3FBF1F6EC0834 /* Loggable.swift in Sources */,
+				D0A899640865312B3BEF8AD831296BAC /* Logger.swift in Sources */,
+				D329B1E4EAFFFB5D8479B0CC019148DE /* Management.swift in Sources */,
+				AFB47A35B4E3F4C49B639C67BABAD596 /* ManagementError.swift in Sources */,
+				F855CFCCCC8FC3A4CEF4E0B4296E9478 /* NativeAuth.swift in Sources */,
+				EDDDB959A763088C0D77BA23CB27D579 /* NSData+URLSafe.swift in Sources */,
+				6CC2DB65A8F19287451AB749780DA7E9 /* NSError+Helper.swift in Sources */,
+				DF2C2CF79BAE9675A2FAA9D68D834017 /* NSURL+Auth0.swift in Sources */,
+				08F688E1C46D9766551EBCA9A608D92D /* NSURLComponents+OAuth2.swift in Sources */,
+				33F0B31B9AD7B31D4E9AD8F270B79FB4 /* OAuth2Grant.swift in Sources */,
+				45B798FF92CAF0ECF129FD965F2F72C3 /* Profile.swift in Sources */,
+				88AE7B82E58715611F7AE85482E9F3E3 /* Request.swift in Sources */,
+				473C701E1D45F8EA386BC9058BDEDB75 /* Requestable.swift in Sources */,
+				FD43236BE45B1FD0DEA71A881C407E9F /* Response.swift in Sources */,
+				DC043466F667F5BA24F6BC248FCEC469 /* ResponseType.swift in Sources */,
+				AC857C80D0EB2A284CCA993064A1C842 /* Result.swift in Sources */,
+				4293B1A90E943FAE86FC360D0EC2DBF2 /* SafariSession.swift in Sources */,
+				08A491102422BEFF4E8A060C1A4B4BE2 /* SafariWebAuth.swift in Sources */,
+				54634A17BC35295295E2F719F4F4DF02 /* SilentSafariViewController.swift in Sources */,
+				9876AAA8252C6E01A8CA0B3FB3C2FFA1 /* Telemetry.swift in Sources */,
+				D785DFC413B895794B25A5A001AFA08C /* TransactionStore.swift in Sources */,
+				02EAAE4C83FF792DBA53C9E02B13BB68 /* UserPatchAttributes.swift in Sources */,
+				2B5870515393C4FD8C6CD91F50393F2F /* Users.swift in Sources */,
+				3AD8B61AB666313CF18F503D70788839 /* WebAuth.swift in Sources */,
+				8B039732FB3C6B90BFAE39C1FC32BC9F /* WebAuthError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,191 +830,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B69E9B509E2FB3684B08A63FC1FF8D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5271E7CFEBDB3527F8BA7EA6CBAFA3 /* A0SimpleKeychain+KeyPair.m in Sources */,
+				866EC63C539C493A671B6C2F21D1BF41 /* A0SimpleKeychain.m in Sources */,
+				AF7DF97CA3636C4109997B87C1E86E62 /* SimpleKeychain-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7F9F274A5EA57A3A21B0AEA5F0B7037F /* PBXTargetDependency */ = {
+		1C6A7EAD6FF4BF6769048CFDAE917E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Auth0;
+			target = 45884430992802E909C1C51D1213793A /* Auth0 */;
+			targetProxy = 485EC2DDD28A2436016A30FB0935B29A /* PBXContainerItemProxy */;
+		};
+		304E9902FCD8E6FA426DAB74202DDE00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = E25B3196D3767E85F1E1E31E756775D1 /* SimpleKeychain */;
+			targetProxy = 2BEF695D600A7443816D9F388D5F1A91 /* PBXContainerItemProxy */;
+		};
+		78D618064C93AFE443AF3B4CEE8C7041 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PureLayout;
-			target = 6748F1B3FDBCA5C5D3911564DA956C85 /* PureLayout */;
-			targetProxy = 4F6F5560C47B06B99D308C05FC29CBE7 /* PBXContainerItemProxy */;
+			target = B0D7A9F243915914FDBE9EDD6958D8E9 /* PureLayout */;
+			targetProxy = 9B4BFB6B3B42ABE6E4A8CA135F009656 /* PBXContainerItemProxy */;
+		};
+		EAB5391DCBF3951AFC67BB7AAD406DAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = E25B3196D3767E85F1E1E31E756775D1 /* SimpleKeychain */;
+			targetProxy = 835DFE336ACE7E0869974E2B45EC3B01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07F3B0302B3DCD42315FAA1F0AC273D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FD4B26E57B641F424E91F36942BB4A7 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MimoiOSCodingChallengeTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		08F6816C38865895CEABCA397E522301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0EDB288716E2896310A8ED1CC7588E39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C911B3853FC6F5A7ABF9A7A4FFDAA134 /* Pods-MimoiOSCodingChallenge.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MimoiOSCodingChallenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1747D66B958FDA75EBFEB59ECB09EACB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AB1C5B9C2D59CED5FD34C56A1F39830 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MimoiOSCodingChallengeTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		42417FD72BB6923B0266AADC425E51A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4389DD2E3E2975F14F9550C3954F5D30 /* Release */ = {
+		091C5747BA4F21EC4516E85A855D1A61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3227C0AC64D3472A39CA215D8EE6788 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -666,46 +906,12 @@
 			};
 			name = Release;
 		};
-		64B298AD4CEFBB5EFC5720E4F8D1290F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C5988C9C3231BA8FECD2173C7E2F61 /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MimoiOSCodingChallengeUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -713,85 +919,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E251C88BFE5D75DDF5C193FE495698EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D902C2BC5637DF488238528DF253B430 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MimoiOSCodingChallenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -820,14 +954,444 @@
 			};
 			name = Debug;
 		};
+		23802B1FFCB3A747ED0A75CF29CF0B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5A90D6E13BE0E5C71ED0A99C495B17 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28E48A8F23412BF2CD7753F2F608F201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB1C5B9C2D59CED5FD34C56A1F39830 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MimoiOSCodingChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E612A5B3CB0483E986EE9C0F19F16B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5A90D6E13BE0E5C71ED0A99C495B17 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79B3F78EAE95AEA56010477E0DC0D37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C911B3853FC6F5A7ABF9A7A4FFDAA134 /* Pods-MimoiOSCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MimoiOSCodingChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8306824CB98D3E6156CA70B8E87C3527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD4B26E57B641F424E91F36942BB4A7 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MimoiOSCodingChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		958EE3915E900D06E0AEC21B9624830D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2B9EC9C0269AA019E5352CBC386399 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD9843D08D26A6547771A21EAC95871F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D902C2BC5637DF488238528DF253B430 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MimoiOSCodingChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C86F0893E7CDD3366A591799BBFBCFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7550BD19B2C6202D28D6CBD19F000DB /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D095A30364741E10991A8709B1AB8A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C5988C9C3231BA8FECD2173C7E2F61 /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MimoiOSCodingChallengeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F301D0F9D683975A103FCB76DDC71E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7550BD19B2C6202D28D6CBD19F000DB /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF723399952F6641E3C62E7520BD1D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2B9EC9C0269AA019E5352CBC386399 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
-				673254EEAF0B5BF4596080C749645884 /* Release */,
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -835,26 +1399,35 @@
 		3E1374B9C687A0EFC3619CCA9B3E3BFC /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64B298AD4CEFBB5EFC5720E4F8D1290F /* Debug */,
-				4389DD2E3E2975F14F9550C3954F5D30 /* Release */,
+				D095A30364741E10991A8709B1AB8A9E /* Debug */,
+				091C5747BA4F21EC4516E85A855D1A61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57E1F18C73CD001B0459480B814D7BE1 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+		70129069866FE6895EC7D4FA464E4B8B /* Build configuration list for PBXNativeTarget "Auth0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08F6816C38865895CEABCA397E522301 /* Debug */,
-				42417FD72BB6923B0266AADC425E51A5 /* Release */,
+				FF723399952F6641E3C62E7520BD1D27 /* Debug */,
+				958EE3915E900D06E0AEC21B9624830D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		833570E9F36C62860A191FCCFA4768F5 /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallenge" */ = {
+		9A999D011C9E422E4BD81181B497E34F /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E251C88BFE5D75DDF5C193FE495698EA /* Debug */,
-				0EDB288716E2896310A8ED1CC7588E39 /* Release */,
+				23802B1FFCB3A747ED0A75CF29CF0B84 /* Debug */,
+				5E612A5B3CB0483E986EE9C0F19F16B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54BC8638CD82A19FA3716273BB54D7C /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9843D08D26A6547771A21EAC95871F /* Debug */,
+				79B3F78EAE95AEA56010477E0DC0D37C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -862,8 +1435,17 @@
 		B2F091796D060507B3666EF7D525A539 /* Build configuration list for PBXNativeTarget "Pods-MimoiOSCodingChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07F3B0302B3DCD42315FAA1F0AC273D5 /* Debug */,
-				1747D66B958FDA75EBFEB59ECB09EACB /* Release */,
+				8306824CB98D3E6156CA70B8E87C3527 /* Debug */,
+				28E48A8F23412BF2CD7753F2F608F201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B5BB604B64F7995127BB1D6E9BED7D /* Build configuration list for PBXNativeTarget "SimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F301D0F9D683975A103FCB76DDC71E1C /* Debug */,
+				C86F0893E7CDD3366A591799BBFBCFDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
