@@ -20,6 +20,7 @@ typedef NS_ENUM(NSUInteger, SettingsTableSection) {
 
 typedef NS_ENUM(NSUInteger, SettingsTableSectionAuthenticationRow) {
     SettingsTableSectionAuthenticationRowUpgrade = 0,
+    SettingsTableSectionAuthenticationRowLogin,
     SettingsTableSectionAuthenticationRowChangePassword,
 	SettingsTableSectionAuthenticationRowSetGoal,
     SettingsTableSectionAuthenticationRowLogout
@@ -180,7 +181,9 @@ static const CGFloat kSettingsSectionFooterHeight               = 48.0;
 	upgradeTitle = NSLocalizedString(@"DownloadMimo", nil);
 	
 	rowTitles[@(SettingsTableSectionAuthentication)] = @{@(SettingsTableSectionAuthenticationRowUpgrade): upgradeTitle,
-														 @(SettingsTableSectionAuthenticationRowChangePassword): NSLocalizedString(@"ChangePassword", @"Table Section Row Title"),
+													
+                                                         @(SettingsTableSectionAuthenticationRowLogin): NSLocalizedString(@"Login", @"Table Section Row Title"),
+                                                         @(SettingsTableSectionAuthenticationRowChangePassword): NSLocalizedString(@"ChangePassword", @"Table Section Row Title"),
 														 @(SettingsTableSectionAuthenticationRowSetGoal): NSLocalizedString(@"SetGoal", @"Table Section Row Title"),
 														 @(SettingsTableSectionAuthenticationRowLogout): NSLocalizedString(@"Logout", @"Table Section Row Title")};
 	
@@ -419,6 +422,9 @@ static const CGFloat kSettingsSectionFooterHeight               = 48.0;
                 case SettingsTableSectionAuthenticationRowLogout:
                     [self logout];
                     break;
+                    case SettingsTableSectionAuthenticationRowLogin:
+                    [self login];
+                    break;
             }
             break;
 		/* Code to be added after completion of the time feature in future release. Current release 1.2.3
@@ -555,6 +561,11 @@ static const CGFloat kSettingsSectionFooterHeight               = 48.0;
 
 - (void)logout {
 
+}
+- (void)login {
+    
+    NSLog(@"Its working");
+    
 }
 
 - (void)restoreWithCell:(SettingsTableViewCell *)cell {

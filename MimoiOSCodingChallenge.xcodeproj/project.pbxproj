@@ -19,6 +19,8 @@
 		2BF3DF2C1E54B7DF004DD445 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */; };
 		2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */; };
 		591B2BD4C62D400CB4E39B30 /* Pods_MimoiOSCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA866BE4B2BF25DEA765CAF4 /* Pods_MimoiOSCodingChallengeTests.framework */; };
+		99E83C6B1EF2ABFA00BDA0F4 /* LoginViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */; };
+		99E83C6C1EF2ABFA00BDA0F4 /* LoginViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E83C6A1EF2ABFA00BDA0F4 /* LoginViewViewController.xib */; };
 		B5B57A556C0D6264F7B2EB66 /* Pods_MimoiOSCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */; };
 		BD6E69CAC730DB8A44EDB347 /* Pods_MimoiOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37560CCE1146D663B5816058 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		89A14F25BE0F8EB51FFE565C /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewViewController.swift; sourceTree = "<group>"; };
+		99E83C6A1EF2ABFA00BDA0F4 /* LoginViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewViewController.xib; sourceTree = "<group>"; };
 		9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,8 @@
 				2BF3DEFC1E54B79A004DD445 /* ViewController.m */,
 				2BF3DF291E54B7DF004DD445 /* SettingsViewController.h */,
 				2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */,
+				99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */,
+				99E83C6A1EF2ABFA00BDA0F4 /* LoginViewViewController.xib */,
 				2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */,
 				2BCC6AB51E55A55A00585FA1 /* SettingsTableViewCell.swift */,
 				2BCC6AB71E55A68400585FA1 /* SettingsAvatar.h */,
@@ -315,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BF3DF051E54B79A004DD445 /* LaunchScreen.storyboard in Resources */,
+				99E83C6C1EF2ABFA00BDA0F4 /* LoginViewViewController.xib in Resources */,
 				2BF3DF021E54B79A004DD445 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +488,7 @@
 				2BCC6AB91E55A68400585FA1 /* SettingsAvatar.m in Sources */,
 				2BF3DEFD1E54B79A004DD445 /* ViewController.m in Sources */,
 				2BF3DEFA1E54B79A004DD445 /* AppDelegate.m in Sources */,
+				99E83C6B1EF2ABFA00BDA0F4 /* LoginViewViewController.swift in Sources */,
 				2BCC6AB61E55A55A00585FA1 /* SettingsTableViewCell.swift in Sources */,
 				2BF3DEF71E54B79A004DD445 /* main.m in Sources */,
 				2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */,
