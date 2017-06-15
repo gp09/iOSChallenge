@@ -8,6 +8,7 @@
 #import "SettingsViewController.h"
 #import "SettingsAvatar.h"
 #import "MimoiOSCodingChallenge-Swift.h"
+//#import "LoginViewViewController.swift"
 
 // NOTE: The order of these enums are essential!
 typedef NS_ENUM(NSUInteger, SettingsTableSection) {
@@ -563,9 +564,22 @@ static const CGFloat kSettingsSectionFooterHeight               = 48.0;
 
 }
 - (void)login {
-    
+    //[self presentViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#> completion:<#^(void)completion#>
     NSLog(@"Its working");
+      //LoginViewViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"Login"];
+ //   [self presentViewController:view animated:YES completion:NULL];
+    //LoginViewViewController *vc = login
     
+   // [self.navigationController pushViewController:vc animated:YES];
+    
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Storyboard"
+                                                         bundle:nil];
+    LoginViewViewController *add =
+    [storyboard instantiateViewControllerWithIdentifier:@"Login"];
+    
+    [self presentViewController:add
+                       animated:YES
+                     completion:nil];;
 }
 
 - (void)restoreWithCell:(SettingsTableViewCell *)cell {
