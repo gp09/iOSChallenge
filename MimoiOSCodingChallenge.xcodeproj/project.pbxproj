@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BCC6AB61E55A55A00585FA1 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC6AB51E55A55A00585FA1 /* SettingsTableViewCell.swift */; };
+		2BCC6AB91E55A68400585FA1 /* SettingsAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC6AB81E55A68400585FA1 /* SettingsAvatar.m */; };
+		2BF3DEF71E54B79A004DD445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DEF61E54B79A004DD445 /* main.m */; };
+		2BF3DEFA1E54B79A004DD445 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DEF91E54B79A004DD445 /* AppDelegate.m */; };
+		2BF3DEFD1E54B79A004DD445 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DEFC1E54B79A004DD445 /* ViewController.m */; };
+		2BF3DF021E54B79A004DD445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF3DF011E54B79A004DD445 /* Assets.xcassets */; };
+		2BF3DF051E54B79A004DD445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF3DF031E54B79A004DD445 /* LaunchScreen.storyboard */; };
+		2BF3DF101E54B79A004DD445 /* MimoiOSCodingChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF0F1E54B79A004DD445 /* MimoiOSCodingChallengeTests.m */; };
+		2BF3DF1B1E54B79A004DD445 /* MimoiOSCodingChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF1A1E54B79A004DD445 /* MimoiOSCodingChallengeUITests.m */; };
+		2BF3DF2C1E54B7DF004DD445 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */; };
+		2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */; };
+		591B2BD4C62D400CB4E39B30 /* Pods_MimoiOSCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA866BE4B2BF25DEA765CAF4 /* Pods_MimoiOSCodingChallengeTests.framework */; };
+		B5B57A556C0D6264F7B2EB66 /* Pods_MimoiOSCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */; };
+		BD6E69CAC730DB8A44EDB347 /* Pods_MimoiOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF3DF0C1E54B79A004DD445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF3DEEA1E54B79A004DD445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF3DEF11E54B79A004DD445;
+			remoteInfo = MimoiOSCodingChallenge;
+		};
+		2BF3DF171E54B79A004DD445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF3DEEA1E54B79A004DD445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF3DEF11E54B79A004DD445;
+			remoteInfo = MimoiOSCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27829E6BCA8E9DAEED47EEF7 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A002B23F391C3A95BD89B56 /* Pods-MimoiOSCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		2BCC6AB51E55A55A00585FA1 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		2BCC6AB71E55A68400585FA1 /* SettingsAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsAvatar.h; sourceTree = "<group>"; };
+		2BCC6AB81E55A68400585FA1 /* SettingsAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsAvatar.m; sourceTree = "<group>"; };
+		2BF3DEF21E54B79A004DD445 /* MimoiOSCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimoiOSCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3DEF61E54B79A004DD445 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BF3DEF81E54B79A004DD445 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BF3DEF91E54B79A004DD445 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BF3DEFB1E54B79A004DD445 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BF3DEFC1E54B79A004DD445 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BF3DF011E54B79A004DD445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF3DF041E54B79A004DD445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BF3DF061E54B79A004DD445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3DF0B1E54B79A004DD445 /* MimoiOSCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimoiOSCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3DF0F1E54B79A004DD445 /* MimoiOSCodingChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MimoiOSCodingChallengeTests.m; sourceTree = "<group>"; };
+		2BF3DF111E54B79A004DD445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3DF161E54B79A004DD445 /* MimoiOSCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimoiOSCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3DF1A1E54B79A004DD445 /* MimoiOSCodingChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MimoiOSCodingChallengeUITests.m; sourceTree = "<group>"; };
+		2BF3DF1C1E54B79A004DD445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3DF281E54B7DE004DD445 /* MimoiOSCodingChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MimoiOSCodingChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		2BF3DF291E54B7DF004DD445 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		37560CCE1146D663B5816058 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89A14F25BE0F8EB51FFE565C /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18B8DDCBC35C4D884C0C7B3 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA866BE4B2BF25DEA765CAF4 /* Pods_MimoiOSCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF3DEEF1E54B79A004DD445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6E69CAC730DB8A44EDB347 /* Pods_MimoiOSCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF081E54B79A004DD445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591B2BD4C62D400CB4E39B30 /* Pods_MimoiOSCodingChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF131E54B79A004DD445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B57A556C0D6264F7B2EB66 /* Pods_MimoiOSCodingChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF3DEE91E54B79A004DD445 = {
+			isa = PBXGroup;
+			children = (
+				2BF3DEF41E54B79A004DD445 /* MimoiOSCodingChallenge */,
+				2BF3DF0E1E54B79A004DD445 /* MimoiOSCodingChallengeTests */,
+				2BF3DF191E54B79A004DD445 /* MimoiOSCodingChallengeUITests */,
+				2BF3DEF31E54B79A004DD445 /* Products */,
+				9612768E75E2B675D1FDB39D /* Pods */,
+				8B0B518BCE1225BC9184E2D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF3DEF31E54B79A004DD445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3DEF21E54B79A004DD445 /* MimoiOSCodingChallenge.app */,
+				2BF3DF0B1E54B79A004DD445 /* MimoiOSCodingChallengeTests.xctest */,
+				2BF3DF161E54B79A004DD445 /* MimoiOSCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF3DEF41E54B79A004DD445 /* MimoiOSCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3DEF81E54B79A004DD445 /* AppDelegate.h */,
+				2BF3DEF91E54B79A004DD445 /* AppDelegate.m */,
+				2BF3DEFB1E54B79A004DD445 /* ViewController.h */,
+				2BF3DEFC1E54B79A004DD445 /* ViewController.m */,
+				2BF3DF291E54B7DF004DD445 /* SettingsViewController.h */,
+				2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */,
+				2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */,
+				2BCC6AB51E55A55A00585FA1 /* SettingsTableViewCell.swift */,
+				2BCC6AB71E55A68400585FA1 /* SettingsAvatar.h */,
+				2BCC6AB81E55A68400585FA1 /* SettingsAvatar.m */,
+				2BF3DF011E54B79A004DD445 /* Assets.xcassets */,
+				2BF3DF031E54B79A004DD445 /* LaunchScreen.storyboard */,
+				2BF3DF061E54B79A004DD445 /* Info.plist */,
+				2BF3DEF51E54B79A004DD445 /* Supporting Files */,
+				2BF3DF281E54B7DE004DD445 /* MimoiOSCodingChallenge-Bridging-Header.h */,
+			);
+			path = MimoiOSCodingChallenge;
+			sourceTree = "<group>";
+		};
+		2BF3DEF51E54B79A004DD445 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3DEF61E54B79A004DD445 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF3DF0E1E54B79A004DD445 /* MimoiOSCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3DF0F1E54B79A004DD445 /* MimoiOSCodingChallengeTests.m */,
+				2BF3DF111E54B79A004DD445 /* Info.plist */,
+			);
+			path = MimoiOSCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		2BF3DF191E54B79A004DD445 /* MimoiOSCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3DF1A1E54B79A004DD445 /* MimoiOSCodingChallengeUITests.m */,
+				2BF3DF1C1E54B79A004DD445 /* Info.plist */,
+			);
+			path = MimoiOSCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		8B0B518BCE1225BC9184E2D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */,
+				FA866BE4B2BF25DEA765CAF4 /* Pods_MimoiOSCodingChallengeTests.framework */,
+				C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9612768E75E2B675D1FDB39D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */,
+				2A002B23F391C3A95BD89B56 /* Pods-MimoiOSCodingChallenge.release.xcconfig */,
+				E18B8DDCBC35C4D884C0C7B3 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */,
+				27829E6BCA8E9DAEED47EEF7 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */,
+				89A14F25BE0F8EB51FFE565C /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */,
+				37560CCE1146D663B5816058 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF3DEF11E54B79A004DD445 /* MimoiOSCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF3DF1F1E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallenge" */;
+			buildPhases = (
+				1C2F973FD619D84BB6F74362 /* [CP] Check Pods Manifest.lock */,
+				2BF3DEEE1E54B79A004DD445 /* Sources */,
+				2BF3DEEF1E54B79A004DD445 /* Frameworks */,
+				2BF3DEF01E54B79A004DD445 /* Resources */,
+				61BE2E8A2BBF512CB3CA36C1 /* [CP] Embed Pods Frameworks */,
+				05857AA745E9480329A57A25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimoiOSCodingChallenge;
+			productName = MimoiOSCodingChallenge;
+			productReference = 2BF3DEF21E54B79A004DD445 /* MimoiOSCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF3DF0A1E54B79A004DD445 /* MimoiOSCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF3DF221E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallengeTests" */;
+			buildPhases = (
+				3BBE34D6E819B938628EA100 /* [CP] Check Pods Manifest.lock */,
+				2BF3DF071E54B79A004DD445 /* Sources */,
+				2BF3DF081E54B79A004DD445 /* Frameworks */,
+				2BF3DF091E54B79A004DD445 /* Resources */,
+				89DAA74D6ED2722C11E2C048 /* [CP] Embed Pods Frameworks */,
+				3859E76F9B49FF89B2C30661 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF3DF0D1E54B79A004DD445 /* PBXTargetDependency */,
+			);
+			name = MimoiOSCodingChallengeTests;
+			productName = MimoiOSCodingChallengeTests;
+			productReference = 2BF3DF0B1E54B79A004DD445 /* MimoiOSCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BF3DF151E54B79A004DD445 /* MimoiOSCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF3DF251E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallengeUITests" */;
+			buildPhases = (
+				C8C41593BF00EDB30A7EA39F /* [CP] Check Pods Manifest.lock */,
+				2BF3DF121E54B79A004DD445 /* Sources */,
+				2BF3DF131E54B79A004DD445 /* Frameworks */,
+				2BF3DF141E54B79A004DD445 /* Resources */,
+				3231AB3C8035A775D5323A2E /* [CP] Embed Pods Frameworks */,
+				BBFB13BE47B18CB751A20D1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF3DF181E54B79A004DD445 /* PBXTargetDependency */,
+			);
+			name = MimoiOSCodingChallengeUITests;
+			productName = MimoiOSCodingChallengeUITests;
+			productReference = 2BF3DF161E54B79A004DD445 /* MimoiOSCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF3DEEA1E54B79A004DD445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mimohello GmbH";
+				TargetAttributes = {
+					2BF3DEF11E54B79A004DD445 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 352XU3N33J;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					2BF3DF0A1E54B79A004DD445 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 352XU3N33J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BF3DEF11E54B79A004DD445;
+					};
+					2BF3DF151E54B79A004DD445 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 352XU3N33J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BF3DEF11E54B79A004DD445;
+					};
+				};
+			};
+			buildConfigurationList = 2BF3DEED1E54B79A004DD445 /* Build configuration list for PBXProject "MimoiOSCodingChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BF3DEE91E54B79A004DD445;
+			productRefGroup = 2BF3DEF31E54B79A004DD445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF3DEF11E54B79A004DD445 /* MimoiOSCodingChallenge */,
+				2BF3DF0A1E54B79A004DD445 /* MimoiOSCodingChallengeTests */,
+				2BF3DF151E54B79A004DD445 /* MimoiOSCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF3DEF01E54B79A004DD445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3DF051E54B79A004DD445 /* LaunchScreen.storyboard in Resources */,
+				2BF3DF021E54B79A004DD445 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF091E54B79A004DD445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF141E54B79A004DD445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05857AA745E9480329A57A25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C2F973FD619D84BB6F74362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3231AB3C8035A775D5323A2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3859E76F9B49FF89B2C30661 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BBE34D6E819B938628EA100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61BE2E8A2BBF512CB3CA36C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89DAA74D6ED2722C11E2C048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallengeTests/Pods-MimoiOSCodingChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFB13BE47B18CB751A20D1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimoiOSCodingChallengeUITests/Pods-MimoiOSCodingChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C41593BF00EDB30A7EA39F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF3DEEE1E54B79A004DD445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCC6AB91E55A68400585FA1 /* SettingsAvatar.m in Sources */,
+				2BF3DEFD1E54B79A004DD445 /* ViewController.m in Sources */,
+				2BF3DEFA1E54B79A004DD445 /* AppDelegate.m in Sources */,
+				2BCC6AB61E55A55A00585FA1 /* SettingsTableViewCell.swift in Sources */,
+				2BF3DEF71E54B79A004DD445 /* main.m in Sources */,
+				2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */,
+				2BF3DF2C1E54B7DF004DD445 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF071E54B79A004DD445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3DF101E54B79A004DD445 /* MimoiOSCodingChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3DF121E54B79A004DD445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3DF1B1E54B79A004DD445 /* MimoiOSCodingChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF3DF0D1E54B79A004DD445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF3DEF11E54B79A004DD445 /* MimoiOSCodingChallenge */;
+			targetProxy = 2BF3DF0C1E54B79A004DD445 /* PBXContainerItemProxy */;
+		};
+		2BF3DF181E54B79A004DD445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF3DEF11E54B79A004DD445 /* MimoiOSCodingChallenge */;
+			targetProxy = 2BF3DF171E54B79A004DD445 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BF3DF031E54B79A004DD445 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF3DF041E54B79A004DD445 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BF3DF1D1E54B79A004DD445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF3DF1E1E54B79A004DD445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF3DF201E54B79A004DD445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MimoiOSCodingChallenge/MimoiOSCodingChallenge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF3DF211E54B79A004DD445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A002B23F391C3A95BD89B56 /* Pods-MimoiOSCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MimoiOSCodingChallenge/MimoiOSCodingChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BF3DF231E54B79A004DD445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18B8DDCBC35C4D884C0C7B3 /* Pods-MimoiOSCodingChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MimoiOSCodingChallenge.app/MimoiOSCodingChallenge";
+			};
+			name = Debug;
+		};
+		2BF3DF241E54B79A004DD445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27829E6BCA8E9DAEED47EEF7 /* Pods-MimoiOSCodingChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MimoiOSCodingChallenge.app/MimoiOSCodingChallenge";
+			};
+			name = Release;
+		};
+		2BF3DF261E54B79A004DD445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A14F25BE0F8EB51FFE565C /* Pods-MimoiOSCodingChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MimoiOSCodingChallenge;
+			};
+			name = Debug;
+		};
+		2BF3DF271E54B79A004DD445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37560CCE1146D663B5816058 /* Pods-MimoiOSCodingChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 352XU3N33J;
+				INFOPLIST_FILE = MimoiOSCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoiOSCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MimoiOSCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF3DEED1E54B79A004DD445 /* Build configuration list for PBXProject "MimoiOSCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3DF1D1E54B79A004DD445 /* Debug */,
+				2BF3DF1E1E54B79A004DD445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF3DF1F1E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3DF201E54B79A004DD445 /* Debug */,
+				2BF3DF211E54B79A004DD445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF3DF221E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3DF231E54B79A004DD445 /* Debug */,
+				2BF3DF241E54B79A004DD445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF3DF251E54B79A004DD445 /* Build configuration list for PBXNativeTarget "MimoiOSCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3DF261E54B79A004DD445 /* Debug */,
+				2BF3DF271E54B79A004DD445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF3DEEA1E54B79A004DD445 /* Project object */;
+}
