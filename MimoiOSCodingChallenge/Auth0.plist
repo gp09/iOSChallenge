@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Auth0.plist
+   MimoiOSCodingChallenge
+
+   Created by Priyank on 15/06/2017.
+   Copyright (c) 2017 Mimohello GmbH. All rights reserved.
+-->
+ 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>ClientId</key>
+        <string>PAn11swGbMAVXVDbSCpnITx5Utsxz1co</string>
+        <key>Domain</key>
+        <string>mimo-test.auth0.com</string>
+    </dict>
+</plist>

@@ -22,6 +22,8 @@
 		99E83C6B1EF2ABFA00BDA0F4 /* LoginViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */; };
 		99E83C6E1EF2B42700BDA0F4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E83C6D1EF2B42700BDA0F4 /* Storyboard.storyboard */; };
 		99E83CB41EF2E46400BDA0F4 /* HybridAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E83CB31EF2E46400BDA0F4 /* HybridAuth.swift */; };
+		99F70C431EF3410A00CBB4EB /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99F70C421EF3410A00CBB4EB /* Auth0.plist */; };
+		99F70C451EF3516900CBB4EB /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F70C441EF3516900CBB4EB /* SessionManager.swift */; };
 		B5B57A556C0D6264F7B2EB66 /* Pods_MimoiOSCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */; };
 		BD6E69CAC730DB8A44EDB347 /* Pods_MimoiOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewViewController.swift; sourceTree = "<group>"; };
 		99E83C6D1EF2B42700BDA0F4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		99E83CB31EF2E46400BDA0F4 /* HybridAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridAuth.swift; sourceTree = "<group>"; };
+		99F70C421EF3410A00CBB4EB /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		99F70C441EF3516900CBB4EB /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9BFE5D015BD98F7F02DA45C6 /* Pods-MimoiOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoiOSCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoiOSCodingChallenge/Pods-MimoiOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C0752AC0B1484421C9660620 /* Pods_MimoiOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA2B99159E74AED055510E /* Pods_MimoiOSCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoiOSCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,11 +145,13 @@
 				2BF3DF291E54B7DF004DD445 /* SettingsViewController.h */,
 				2BF3DF2A1E54B7DF004DD445 /* SettingsViewController.m */,
 				99E83C691EF2ABFA00BDA0F4 /* LoginViewViewController.swift */,
+				99F70C441EF3516900CBB4EB /* SessionManager.swift */,
 				2BF3DF2B1E54B7DF004DD445 /* SettingsViewController.swift */,
 				2BCC6AB51E55A55A00585FA1 /* SettingsTableViewCell.swift */,
 				2BCC6AB71E55A68400585FA1 /* SettingsAvatar.h */,
 				2BCC6AB81E55A68400585FA1 /* SettingsAvatar.m */,
 				99E83C6D1EF2B42700BDA0F4 /* Storyboard.storyboard */,
+				99F70C421EF3410A00CBB4EB /* Auth0.plist */,
 				2BF3DF011E54B79A004DD445 /* Assets.xcassets */,
 				2BF3DF031E54B79A004DD445 /* LaunchScreen.storyboard */,
 				2BF3DF061E54B79A004DD445 /* Info.plist */,
@@ -326,6 +332,7 @@
 				2BF3DF051E54B79A004DD445 /* LaunchScreen.storyboard in Resources */,
 				2BF3DF021E54B79A004DD445 /* Assets.xcassets in Resources */,
 				99E83C6E1EF2B42700BDA0F4 /* Storyboard.storyboard in Resources */,
+				99F70C431EF3410A00CBB4EB /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +503,7 @@
 				99E83CB41EF2E46400BDA0F4 /* HybridAuth.swift in Sources */,
 				2BF3DEF71E54B79A004DD445 /* main.m in Sources */,
 				2BF3DF2D1E54B7DF004DD445 /* SettingsViewController.swift in Sources */,
+				99F70C451EF3516900CBB4EB /* SessionManager.swift in Sources */,
 				2BF3DF2C1E54B7DF004DD445 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

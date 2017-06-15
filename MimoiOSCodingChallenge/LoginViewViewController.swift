@@ -20,12 +20,11 @@ import Auth0
     @IBOutlet var actionButtons: [UIButton]!
     @IBOutlet var textFields: [UITextField]!
     
-    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // self.actionButtons.forEach { $0.roundLaterals() }
-      //  self.textFields.forEach { $0.setPlaceholderTextColor(.lightVioletColor()) }
+        spinner.isHidden = true
+    
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
@@ -35,12 +34,11 @@ import Auth0
     // MARK: - IBAction
     
     @IBAction func login(_ sender: UIButton) {
-        self.performLogin()
+        self.performRegister()
+        
+       // self.performLogin()
     }
     
-    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
-        self.validateForm()
-    }
     
  
     // MARK: - Private
@@ -60,6 +58,26 @@ import Auth0
             }
         }
     }
+    fileprivate func performRegister() {
+        self.view.endEditing(true)
+        self.loading = true
+        Auth0
+            .authentication()
+            .createUser(email: "priyank.working@gmail.com", username: "pgupta03", password: "priyank123", connection: "Username-Password-Authentication", userMetadata: ["first_name":"priyank","last_name": "gupta"])            .start { result in
+                DispatchQueue.main.async {
+                    self.loading = false
+                    switch result {
+                    case .success(let user):
+                        self.showAlertForError(er: user.email as! String)
+
+                      //  self.performSegue(withIdentifier: "DismissSignUp", sender: nil)
+                    case .failure(let error):
+                        self.showAlertForError(er: error as! String)
+                    }
+                }
+        }
+    }
+
     
     fileprivate func performLogin() {
         self.view.endEditing(true)
@@ -78,17 +96,22 @@ import Auth0
                     case .success(let credentials):
                         self.loginWithCredentials(credentials)
                     case .failure(let error):
-                        print("Failed")
-                     //   self.showAlertForError(error)
-                    }
+                         self.showAlertForError(er: error.localizedDescription)
+                                         }
                 }
         }
     }
     
+    fileprivate func showAlertForError(er:String) {
+        let alert = UIAlertController(title: "Alert", message: er  , preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     fileprivate func loginWithCredentials(_ credentials: Credentials) {
         self.retrievedCredentials = credentials
-        self.performSegue(withIdentifier: "ShowProfile", sender: nil)
+        let viewController: SettingsViewController = SettingsViewController()
+        self.present(viewController, animated: true, completion:nil)
     }
     
     fileprivate func validateForm() {
@@ -98,6 +121,7 @@ import Auth0
     fileprivate var formIsValid: Bool {
         return self.emailTextField.hasText && self.passwordTextField.hasText
     }
+    
     
 }
 
